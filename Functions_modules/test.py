@@ -1,3 +1,7 @@
+#import trading_tools
+from trading_tools import calculate_loss
+from trading_tools import calculate_profit
+
 def calculate_profit(entry_price,exit_price):
     """
         Calculates the profit or loss of the transaction.
@@ -8,7 +12,7 @@ def calculate_profit(entry_price,exit_price):
 
         Returns:
                 float: Profit (if positive) or loss (if negative).
-
+-
         Returns None if an error occurs.
         """
     try:
@@ -21,5 +25,7 @@ def calculate_profit(entry_price,exit_price):
 
 entry_price = float(input("Enter the price you wish to buy: "))
 exit_price = float(input("Enter the price you wish to sell: "))
-result = calculate_profit(entry_price, exit_price)
-print("Your profit/loss is:", result)
+result1 = calculate_profit(entry_price, exit_price)
+print("Your profit is:", result1)
+result2 = calculate_loss(entry_price, exit_price)
+print("Your loss is:", result2)
