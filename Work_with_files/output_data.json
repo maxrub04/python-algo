@@ -1,0 +1,16 @@
+[
+    {
+        "Name": "EUR/USD",
+        "Base": "EUR",
+        "Quote": "USD",
+        "Price": 1.135,
+        "Exchange": "OANDA"
+    },
+    {
+        "Name": "GBP/USD",
+        "Base": "GBP",
+        "Quote": "USD",
+        "Price": 1.25,
+        "Exchange": "OANDA"
+    }
+]

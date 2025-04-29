@@ -1,0 +1,12 @@
+{
+    "api_key": "your-api-key",
+    "limits": {
+        "max_trade_amount": 100000,
+        "min_trade_amount": 100
+    },
+    "assets": [
+        "Bitcoin",
+        "Ethereum",
+        "Litecoin"
+    ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "symbol": "AAPL",
+    "price": 150.25,
+    "volume": 10
+  },
+  {
+    "symbol": "TSLA",
+    "price": 700.50,
+    "volume": 5
+  },
+  {
+    "symbol": "GOOGL",
+    "price": 2800.10,
+    "volume": 2
+  },
+  {
+    "symbol": "AMZN",
+    "price": 3300.75,
+    "volume": 3
+  }
+]

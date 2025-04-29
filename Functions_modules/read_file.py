@@ -38,5 +38,5 @@ def read_trade_data(filename):
         print(f"UNKNOWN ERROR: {e}")
         return []
 
-data = read_trade_data('trades.csv')
+data = read_trade_data('trades.json')
 print(data)
