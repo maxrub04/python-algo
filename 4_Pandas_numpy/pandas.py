@@ -40,5 +40,18 @@ print("Filter by price and volume:\n", filtered_df)
 
 #Data grouping and aggregation
 
+# Create an additional column with category
+df["Category"] = pd.cut(df["Price"], bins=[0, 500, 5000, 50000],
+labels=["Low", "Mid", "High"])
+print("DataFrame with categories:\n", df)
+# Grouping
+grouped = df.groupby("Category")["Volume"].mean()
+print("Mean volume by categories:\n", grouped)
 
+# aggregation
+aggregated = df.groupby("Category").agg({
+"Price": ["mean", "min", "max"],
+"Volume": "sum"
+})
+print("aggregation:\n", aggregated)
 
