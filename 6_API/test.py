@@ -31,7 +31,7 @@ parameters = {
 }
 headers = {
 "Accepts": "application/json",
-"X-CMC_PRO_API_KEY": "a7840494-7ab3-4fa0-a42e-42719b871f34" #YOUR_API_KEY_HERE
+"X-CMC_PRO_API_KEY": "YOUR_API_KEY_HERE" #YOUR_API_KEY_HERE
 }
 response = requests.get(url, headers=headers, params=parameters)
 data = response.json()
@@ -41,7 +41,7 @@ print("Current price Bitcoin (CoinMarketCap):", data["data"]["BTC"]["quote"]["US
 url = "https://pro-api.coinmarketcap.com/v1/global-metrics/quotes/latest"
 headers = {
 "Accepts": "application/json",
-"X-CMC_PRO_API_KEY": "a7840494-7ab3-4fa0-a42e-42719b871f34"  #YOUR_API_KEY_HERE
+"X-CMC_PRO_API_KEY": "YOUR_API_KEY_HERE"  #YOUR_API_KEY_HERE
 }
 response = requests.get(url, headers=headers)
 global_data = response.json()
