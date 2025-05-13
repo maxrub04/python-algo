@@ -20,7 +20,6 @@ peaks, _ = signal.find_peaks(inverted_prices, distance=5)
 
 
 
-
 plt.figure(figsize=(10, 5))
 plt.plot(df.index, prices_array, label="Price", marker="o")
 plt.plot(df.index[peaks], prices_array[peaks], "rv", label="Local Minimials")

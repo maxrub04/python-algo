@@ -1,5 +1,4 @@
-# Determine support and resistance levels based on the last N days
-
+# Determine support an
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt

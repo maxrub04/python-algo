@@ -10,4 +10,3 @@ df = pd.DataFrame({"Date": dates, "Price": prices})
 df.set_index("Date", inplace=True)
 
 
-
