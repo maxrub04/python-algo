@@ -1,4 +1,4 @@
-# Determine support an
+# Determine support and resistance
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
