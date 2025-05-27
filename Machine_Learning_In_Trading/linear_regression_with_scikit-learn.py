@@ -45,3 +45,14 @@ print("R² Score:", r2)
 # Output the coefficients of the model
 print("Regression coefficient:", model.coef_)
 print("Baseline value:", model.intercept_)
+
+import matplotlib.pyplot as plt
+plt.figure(figsize=(10, 5))
+plt.scatter(y_test, y_pred, color="blue", label="Predicted prices")
+plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], "r--", label="Ideal Line")
+plt.xlabel("True Price")
+plt.ylabel("Predicted Price")
+plt.title("Linear Regression: True vs Predicted prices")
+plt.legend()
+plt.grid(True)
+plt.show()
