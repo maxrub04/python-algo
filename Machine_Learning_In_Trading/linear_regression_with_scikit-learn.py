@@ -16,3 +16,15 @@ data = pd.DataFrame({
 })
 data.set_index("Date", inplace=True)
 
+
+# We use the previous values as indicators to predict the next price value
+data["Target"] = data["Price"].shift(-1)
+data = data.dropna()
+
+# Define the attributes matrix and the target variable
+X = data[["Price", "SMA_5"]]
+y = data["Target"]
+
+# Divide data into training and tests sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
