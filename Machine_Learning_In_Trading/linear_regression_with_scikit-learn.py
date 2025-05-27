@@ -28,3 +28,20 @@ y = data["Target"]
 # Divide data into training and tests sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
+# Create and train a linear regression model
+model = LinearRegression()
+model.fit(X_train, y_train)
+
+# Predicting values for the test set
+y_pred = model.predict(X_test)
+
+# Calculating the error metrics
+mse = mean_squared_error(y_test, y_pred)
+r2 = r2_score(y_test, y_pred)
+
+print("Mean Squared Error:", mse)
+print("R² Score:", r2)
+
+# Output the coefficients of the model
+print("Regression coefficient:", model.coef_)
+print("Baseline value:", model.intercept_)
