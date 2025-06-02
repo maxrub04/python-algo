@@ -45,3 +45,16 @@ plt.title("Feature space and predicted trading signals")
 plt.colorbar(label="Signal (0 = Sell, 1 = Buy)")
 plt.grid(True)
 plt.show()
+
+
+
+
+# Create new attributes based on the initial data
+data["Returns"] = data["Price"].pct_change() # Profitability
+data["SMA_10"] = data["Price"].rolling(window=10).mean()
+data = data.dropna()
+
+X = data[["Price", "SMA_5", "SMA_10", "Returns"]]
+y = data["Signal"]
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
