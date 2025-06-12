@@ -25,5 +25,6 @@ ws = websocket.WebSocketApp(
     on_close=on_close
 )
 
+
 # Run WebSocket with SSL verification turned off
 ws.run_forever(sslopt={"cert_reqs": ssl.CERT_NONE})
