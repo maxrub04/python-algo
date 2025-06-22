@@ -12,8 +12,8 @@ def send_order(symbol, side, order_type, quantity, price=None):
     params = {
 
         "symbol": symbol,
-        "side": side, # "BUY" или "SELL"
-        "type": order_type, # Например, "LIMIT"
+        "side": side, # "BUY" or "SELL"
+        "type": order_type, # exmaple, "LIMIT"
         "quantity": quantity,
         "timestamp": int(time.time() * 1000)
         }
