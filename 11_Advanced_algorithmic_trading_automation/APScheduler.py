@@ -11,7 +11,6 @@ scheduler = BlockingScheduler()
 # Run the function every 10 seconds
 scheduler.add_job(execute_trading_signal, 'interval', seconds=10)
 
-
 try:
     print("Starting bot...")
     scheduler.start()
