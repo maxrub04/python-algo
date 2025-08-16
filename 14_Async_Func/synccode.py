@@ -7,5 +7,4 @@ def main():
     result1 = fetch_data()
     result2 = fetch_data()
     print(result1,result2)
-
 main()
